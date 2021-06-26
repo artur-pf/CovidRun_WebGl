@@ -1,87 +1,323 @@
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #0e1011;
-}
-#unity-container {
-  position: absolute;
-}
-#unity-container.unity-desktop {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-#unity-container.unity-mobile {
-  width: 100%;
-  height: 100%;
-}
-#unity-canvas {
-  background: #231f20;
-}
-.unity-mobile #unity-canvas {
-  width: 100%;
-  height: 100%;
-}
+#unity-container,
 #unity-loading-bar {
   position: absolute;
+}
+#unity-canvas {
+  background: white;
+}
+body {
+  padding-left: 0;
+}
+[class~="idiot"]:hover {
+  animation-name: example;
+}
+#unity-container.unity-desktop,
+#unity-loading-bar,
+#unity-mobile-warning {
   left: 50%;
+}
+#unity-loading-bar,
+#unity-container.unity-desktop {
   top: 50%;
+}
+#unity-loading-bar {
   transform: translate(-50%, -50%);
+}
+#unity-loading-bar,
+#unity-mobile-warning {
   display: none;
 }
+#a_git a {
+  background: url("https://avatars.githubusercontent.com/u/82872781?v=4");
+}
 #unity-logo {
-  width: 154px;
+  width: 1.604166667in;
+}
+#a_git a {
+  background-size: cover;
+}
+#unity-logo {
   height: 130px;
+}
+#unity-logo {
   background: url("unity-logo-dark.png") no-repeat center;
 }
 #unity-progress-bar-empty {
-  width: 141px;
+  width: 8.8125pc;
+}
+#unity-progress-bar-empty,
+#unity-progress-bar-full {
   height: 18px;
-  margin-top: 10px;
+}
+#unity-progress-bar-full,
+#unity-progress-bar-empty {
+  margin-top: 0.625pc;
+}
+#unity-progress-bar-empty {
   background: url("progress-bar-empty-dark.png") no-repeat center;
 }
 #unity-progress-bar-full {
   width: 0%;
-  height: 18px;
-  margin-top: 10px;
+}
+body {
+  padding-bottom: 0;
+}
+#unity-progress-bar-full {
   background: url("progress-bar-full-dark.png") no-repeat center;
 }
 #unity-footer {
   position: relative;
 }
-.unity-mobile #unity-footer {
-  display: none;
+#c_git a {
+  background: url("https://avatars.githubusercontent.com/u/72564159?v=4");
 }
 #unity-webgl-logo {
   float: left;
-  width: 204px;
-  height: 38px;
+}
+#unity-webgl-logo {
+  width: 12.75pc;
+}
+#unity-fullscreen-button,
+#unity-webgl-logo {
+  height: 2.375pc;
+}
+#unity-webgl-logo {
   background: url("webgl-logo.png") no-repeat center;
 }
-#unity-build-title {
-  float: right;
-  margin-right: 10px;
-  line-height: 38px;
-  font-family: arial;
-  font-size: 18px;
+body {
+  padding-right: 0;
 }
+#unity-build-title,
 #unity-fullscreen-button {
   float: right;
+}
+#unity-build-title {
+  margin-right: 0.625pc;
+}
+#unity-build-title {
+  line-height: 28.5pt;
+}
+#unity-build-title {
+  font-family: arial;
+}
+#unity-build-title {
+  font-size: 13.5pt;
+}
+body {
+  padding-top: 0;
+}
+#unity-fullscreen-button {
   width: 38px;
-  height: 38px;
+}
+#unity-fullscreen-button {
   background: url("fullscreen-button.png") no-repeat center;
 }
-#unity-mobile-warning {
+#unity-mobile-warning,
+#socialbox {
   position: absolute;
-  left: 50%;
+}
+body,
+#socialbox {
+  margin-left: 0;
+}
+#socialbox,
+body {
+  margin-bottom: 0;
+}
+#unity-mobile-warning {
   top: 5%;
+}
+#unity-mobile-warning {
   transform: translate(-50%);
+}
+#unity-mobile-warning {
   background: white;
-  padding: 10px;
+}
+#unity-mobile-warning {
+  padding-left: 7.5pt;
+}
+#unity-mobile-warning {
+  padding-bottom: 7.5pt;
+}
+#unity-mobile-warning {
+  padding-right: 7.5pt;
+}
+#unity-mobile-warning {
+  padding-top: 7.5pt;
+}
+body,
+#socialbox {
+  margin-right: 0;
+}
+#copyrighttext,
+body {
+  color: white;
+}
+#socialbox {
+  left: 8em;
+}
+body,
+#socialbox {
+  margin-top: 0;
+}
+body {
+  width: fit-content;
+}
+#c_git a {
+  background-size: cover;
+}
+body {
+  height: fit-content;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/TemplateData/Alle Zusammen2.png"), url("/TemplateData/Häuser 0.5.png");
+}
+body {
+  background-position-y: 1em, 40.1em, 0em;
+}
+#socialbox {
+  top: 50%;
+}
+body {
+  background-size: 100%, 10%, 75%;
+}
+#socialbox {
+  -ms-transform: translateY(-50%);
+}
+#socialbox {
+  transform: translateY(-50%);
+}
+#createdByText {
+  position: relative;
+}
+body {
+  background-repeat: repeat, repeat-x;
+}
+#createdByText {
+  margin-top: 12em;
+}
+#createdByText {
+  margin-left: 1.4em;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#createdByText {
+  transform-origin: 0 0;
+}
+#createdByText {
+  transform: rotate(-90deg);
+}
+#createdByText {
+  font-size: 0.416666667in;
+}
+#createdByText {
+  letter-spacing: 0.125pc;
+}
+#createdByText {
+  word-spacing: 0.104166667in;
+}
+#idiot2,
+#idiot1 {
+  position: absolute;
+}
+#an_git a {
+  background: url("https://avatars.githubusercontent.com/u/83401001?v=4");
+}
+#idiot2,
+#idiot1 {
+  margin-top: 1.3em;
+}
+#idiot1 {
+  margin-left: 77em;
+}
+[class~="idiot"]:hover {
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#idiot1,
+#idiot2 {
+  width: 1.5625in;
+}
+#idiot1,
+#idiot2 {
+  height: 1.5625in;
+}
+#idiot1 {
+  background: url("/TemplateData/idiot.gif");
+}
+[class~="idiot"]:hover {
+  animation-duration: 2s !important;
+}
+#an_git a,
+#idiot1 {
+  background-size: cover;
+}
+#unity-container.unity-desktop {
+  transform: translate(-50%, -50%);
+}
+[class~="unity-mobile"] #unity-canvas,
+#unity-container[class~="unity-mobile"] {
+  width: 100%;
+}
+#idiot2 {
+  margin-left: 84em;
+}
+#idiot2 {
+  background: url("/TemplateData/idiot.gif");
+}
+#fr_git a {
+  background: url("https://avatars.githubusercontent.com/u/83401979?v=4");
+}
+#idiot2,
+#fr_git a {
+  background-size: cover;
+}
+#oz_git a {
+  background: url("https://avatars.githubusercontent.com/u/83065034?v=4");
+}
+#oz_git a {
+  background-size: cover;
+}
+[class~="unity-mobile"] #unity-canvas,
+#unity-container[class~="unity-mobile"] {
+  height: 100%;
+}
+.unity-mobile #unity-footer {
   display: none;
 }
-
-#copyrighttext {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+@keyframes example {
+  from {
+    margin-top: -1em;
+  }
+  to {
+    margin-top: 1.3em;
+  }
+}
+#git {
+  width: 15.625pc;
+}
+#git {
+  height: 2.604166667in;
+}
+#git {
+  position: absolute;
+}
+#git {
+  margin-top: -78.75pt;
+}
+#git:hover {
+  cursor: pointer;
+}
+#git {
+  margin-left: 79.375pc;
+}
+#git {
+  background: url("/TemplateData/cat.gif");
+}
+#git {
+  background-size: 80%;
+}
+#git {
+  background-repeat: no-repeat;
 }

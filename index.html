@@ -3,11 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | CovidRun</title>
+    <title>CovidRun</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/gh/vaakash/socializer@2f749eb/css/socializer.min.css">
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="//db.onlinewebfonts.com/c/cae9571407321e5d5e496ada719e9f63?family=Pixel" rel="stylesheet" type="text/css" id="copyright_2003 Boris Kahl, Volcano Type, Karlsruhe"/>
   </head>
   <body>
+    <aside>
+      <!-- <div id="idiot1" class="idiot"></div>
+      <div id="idiot2" class="idiot"></div> -->
+    </aside> 
+    <h1 id="createdByText">Created by</h1>
+    <div id="git" onClick="window.open('https://www.google.com/')";></div>
+    <div class="sr-sharebar sr-sb-vl sr-sb-left" id="socialbox">
+      <div class="socializer a sr-48px sr-circle sr-shrink sr-vertical sr-font-lg sr-bg-white sr-sw-1 sr-pad">
+        <span class="sr-github sr-text-below" id="a_git">
+          <a href="https://github.com/artur-pf" target="_blank" title="Github"></a>
+          <span class="text" style=" font-weight: bolder;">artur-pf</span>
+        </span>
+        <span class="sr-github sr-text-below" id="c_git">
+          <a href="https://github.com/chrisinick" target="_blank" title="Github"></a>
+          <span class="text" style=" text-align: center; font-weight: bolder;">chrisinick</span>
+        </span>
+        <span class="sr-github sr-text-below" id="an_git">
+          <a href="https://github.com/and1mon" target="_blank" title="Github"></a>
+          <span class="text" style=" text-align: center; font-weight: bolder;">and1mon</span>
+        </span>
+        <span class="sr-github sr-text-below" id="fr_git">
+          <a href="https://github.com/FrankyFFBF" target="_blank" title="Github"></a>
+          <span class="text" style=" margin-right:10px; font-weight: bolder;">FrankyFFBF</span>
+        </span>
+        <span class="sr-github sr-text-below" id="oz_git">
+          <a href="https://github.com/Edge71" target="_blank" title="Github"></a>
+          <span class="text" style=" text-align: center; font-weight: bolder;">Edge71</span>
+        </span>
+      </div>
+    </div>
+    </div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -25,62 +62,7 @@
       </div>
     </div>
     <script>
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/webgl 2.0.loader.js";
-      var config = {
-        dataUrl: buildUrl + "/webgl 2.0.data.unityweb",
-        frameworkUrl: buildUrl + "/webgl 2.0.framework.js.unityweb",
-        codeUrl: buildUrl + "/webgl 2.0.wasm.unityweb",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "BigBrainGroup",
-        productName: "CovidRun",
-        productVersion: "1.0",
-      };
-
-      var container = document.querySelector("#unity-container");
-      var canvas = document.querySelector("#unity-canvas");
-      var loadingBar = document.querySelector("#unity-loading-bar");
-      var progressBarFull = document.querySelector("#unity-progress-bar-full");
-      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-      var mobileWarning = document.querySelector("#unity-mobile-warning");
-
-      // By default Unity keeps WebGL canvas render target size matched with
-      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
-      // Set this to false if you want to decouple this synchronization from
-      // happening inside the engine, and you would instead like to size up
-      // the canvas DOM size and WebGL render target sizes yourself.
-      // config.matchWebGLToCanvasSize = false;
-
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        container.className = "unity-mobile";
-        // Avoid draining fillrate performance on mobile devices,
-        // and default/override low DPI mode on mobile browsers.
-        config.devicePixelRatio = 1;
-        mobileWarning.style.display = "block";
-        setTimeout(() => {
-          mobileWarning.style.display = "none";
-        }, 5000);
-      } else {
-        canvas.style.width = "1066px";
-        canvas.style.height = "600px";
-      }
-      loadingBar.style.display = "block";
-
-      var script = document.createElement("script");
-      script.src = loaderUrl;
-      script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
-          progressBarFull.style.width = 100 * progress + "%";
-        }).then((unityInstance) => {
-          loadingBar.style.display = "none";
-          fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1);
-          };
-        }).catch((message) => {
-          alert(message);
-        });
-      };
-      document.body.appendChild(script);
+      var _0x5713=['height','#unity-progress-bar-full','184477YGpsLt','20253tKNaoV','onclick','600px','/webgl\x202.0.wasm.unityweb','1187MXAEUs','none','userAgent','198276KerWkt','style','catch','1.0','querySelector','StreamingAssets','then','CovidRun','631HYsTBp','39161EVuyNn','devicePixelRatio','1XNsmbw','353426uZsOPq','Build','unity-mobile','test','className','display','#unity-fullscreen-button','BigBrainGroup','src','SetFullscreen','/webgl\x202.0.loader.js','onload','1066px','appendChild','width','/webgl\x202.0.framework.js.unityweb','script','/webgl\x202.0.data.unityweb','24eUZmwv','679399WgaGZD','createElement','#unity-mobile-warning','block','#unity-loading-bar'];var _0x4114c9=_0x10d1;(function(_0x25f0b3,_0x5503ff){var _0x31635c=_0x10d1;while(!![]){try{var _0x5135b2=-parseInt(_0x31635c(0x75))*parseInt(_0x31635c(0x74))+parseInt(_0x31635c(0x69))+parseInt(_0x31635c(0x88))+parseInt(_0x31635c(0x87))*-parseInt(_0x31635c(0x72))+parseInt(_0x31635c(0x8f))+-parseInt(_0x31635c(0x90))+-parseInt(_0x31635c(0x71))*-parseInt(_0x31635c(0x94));if(_0x5135b2===_0x5503ff)break;else _0x25f0b3['push'](_0x25f0b3['shift']());}catch(_0x450024){_0x25f0b3['push'](_0x25f0b3['shift']());}}}(_0x5713,0x797c6));var buildUrl=_0x4114c9(0x76),loaderUrl=buildUrl+_0x4114c9(0x7f),config={'dataUrl':buildUrl+_0x4114c9(0x86),'frameworkUrl':buildUrl+_0x4114c9(0x84),'codeUrl':buildUrl+_0x4114c9(0x93),'streamingAssetsUrl':_0x4114c9(0x6e),'companyName':_0x4114c9(0x7c),'productName':_0x4114c9(0x70),'productVersion':_0x4114c9(0x6c)},container=document[_0x4114c9(0x6d)]('#unity-container'),canvas=document[_0x4114c9(0x6d)]('#unity-canvas'),loadingBar=document[_0x4114c9(0x6d)](_0x4114c9(0x8c)),progressBarFull=document['querySelector'](_0x4114c9(0x8e)),fullscreenButton=document[_0x4114c9(0x6d)](_0x4114c9(0x7b)),mobileWarning=document[_0x4114c9(0x6d)](_0x4114c9(0x8a));/iPhone|iPad|iPod|Android/i[_0x4114c9(0x78)](navigator[_0x4114c9(0x68)])?(container[_0x4114c9(0x79)]=_0x4114c9(0x77),config[_0x4114c9(0x73)]=0x1,mobileWarning[_0x4114c9(0x6a)][_0x4114c9(0x7a)]=_0x4114c9(0x8b),setTimeout(()=>{var _0x5e4dec=_0x4114c9;mobileWarning[_0x5e4dec(0x6a)][_0x5e4dec(0x7a)]='none';},0x1388)):(canvas[_0x4114c9(0x6a)]['width']=_0x4114c9(0x81),canvas['style'][_0x4114c9(0x8d)]=_0x4114c9(0x92));loadingBar['style'][_0x4114c9(0x7a)]=_0x4114c9(0x8b);var script=document[_0x4114c9(0x89)](_0x4114c9(0x85));function _0x10d1(_0xb0e922,_0x515576){return _0x10d1=function(_0x5713f2,_0x10d177){_0x5713f2=_0x5713f2-0x67;var _0x462ff3=_0x5713[_0x5713f2];return _0x462ff3;},_0x10d1(_0xb0e922,_0x515576);}script[_0x4114c9(0x7d)]=loaderUrl,script[_0x4114c9(0x80)]=()=>{var _0x25570e=_0x4114c9;createUnityInstance(canvas,config,_0x5a31ad=>{var _0x4233bc=_0x10d1;progressBarFull[_0x4233bc(0x6a)][_0x4233bc(0x83)]=0x64*_0x5a31ad+'%';})[_0x25570e(0x6f)](_0x999cb3=>{var _0x28f039=_0x25570e;loadingBar[_0x28f039(0x6a)][_0x28f039(0x7a)]=_0x28f039(0x67),fullscreenButton[_0x28f039(0x91)]=()=>{var _0x1adc10=_0x28f039;_0x999cb3[_0x1adc10(0x7e)](0x1);};})[_0x25570e(0x6b)](_0x200ed8=>{alert(_0x200ed8);});},document['body'][_0x4114c9(0x82)](script);
     </script>
   </body>
 </html>
