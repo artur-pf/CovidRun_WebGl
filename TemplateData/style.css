@@ -99,8 +99,7 @@ body {
   margin: 0;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-50%) scale(1.5);
 }
 #a_git a {
   background: url(https://avatars.githubusercontent.com/u/82872781?v=4);
