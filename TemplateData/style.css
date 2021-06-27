@@ -174,4 +174,5 @@ body {
 }
 #git:hover {
   cursor: pointer;
+  transform: translate(0px, -4px) scale(1.05);
 }
