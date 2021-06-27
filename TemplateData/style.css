@@ -5,7 +5,8 @@ body {
   height: fit-content;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("asphalt.png"), url("background.png");
-  background-position-y: 1em, 40.1em, 0em;
+  background-color: #abddff;
+  background-position-y: 1em, 45.1em, 8em;
   background-size: 100%, 10%, 75%;
   background-repeat: repeat, repeat-x, repeat-x;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -123,7 +124,7 @@ body {
 }
 #createdByText {
   position: relative;
-  margin-top: 12em;
+  margin-top: 14.7em;
   margin-left: 1.4em;
   transform-origin: 0 0;
   transform: rotate(-90deg);
@@ -166,8 +167,8 @@ body {
   width: 250px;
   height: 250px;
   position: absolute;
-  margin-top: -105px;
-  margin-left: 1310px;
+  margin-top: -8em;
+  margin-left: 103em;
   background: url("cat.gif");
   background-size: 80%;
   background-repeat: no-repeat;
