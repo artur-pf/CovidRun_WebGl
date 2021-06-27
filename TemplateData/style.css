@@ -4,12 +4,13 @@ body {
   width: fit-content;
   height: fit-content;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(TemplateData/asphalt.png), url(TemplateData/background.png);
+    url("asphalt.png"), url("background.png");
   background-position-y: 1em, 40.1em, 0em;
   background-size: 100%, 10%, 75%;
   background-repeat: repeat, repeat-x;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
+  overflow: hidden;
 }
 #unity-container {
   position: absolute;
@@ -136,7 +137,7 @@ body {
   margin-left: 77em;
   width: 150px;
   height: 150px;
-  background: url(TemplateData/idiot.gif);
+  background: url("idiot.gif");
   background-size: cover;
 }
 #idiot2 {
@@ -145,7 +146,7 @@ body {
   margin-left: 84em;
   width: 150px;
   height: 150px;
-  background: url(TemplateData/idiot.gif);
+  background: url("idiot.gif");
   background-size: cover;
 }
 .idiot:hover {
@@ -166,8 +167,8 @@ body {
   height: 250px;
   position: absolute;
   margin-top: -105px;
-  margin-left: 1270px;
-  background: url(TemplateData/cat.gif);
+  margin-left: 1310px;
+  background: url("cat.gif");
   background-size: 80%;
   background-repeat: no-repeat;
 }
