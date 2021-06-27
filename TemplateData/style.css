@@ -7,7 +7,7 @@ body {
     url("asphalt.png"), url("background.png");
   background-position-y: 1em, 40.1em, 0em;
   background-size: 100%, 10%, 75%;
-  background-repeat: repeat, repeat-x;
+  background-repeat: repeat, repeat-x, repeat-x;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   overflow: hidden;
