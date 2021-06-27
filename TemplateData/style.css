@@ -123,11 +123,11 @@ body {
 }
 #createdByText {
   position: relative;
-  margin-top: 14.7em;
-  margin-left: 1.4em;
+  margin-top: 11.7em;
+  margin-left: 0.6em;
   transform-origin: 0 0;
   transform: rotate(-90deg);
-  font-size: 40px;
+  font-size: 50px;
   letter-spacing: 2px;
   word-spacing: 10px;
 }
@@ -166,7 +166,7 @@ body {
   width: 250px;
   height: 250px;
   position: absolute;
-  margin-top: -8em;
+  margin-top: -9.3em;
   margin-left: 103em;
   background: url("cat.gif");
   background-size: 80%;
