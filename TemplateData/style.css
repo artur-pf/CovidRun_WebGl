@@ -4,7 +4,7 @@ body {
   width: fit-content;
   height: fit-content;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(/TemplateData/Alle\ Zusammen2.png), url(/TemplateData/Häuser\ 0.5.png);
+    url(TemplateData/asphalt.png), url(TemplateData/background.png);
   background-position-y: 1em, 40.1em, 0em;
   background-size: 100%, 10%, 75%;
   background-repeat: repeat, repeat-x;
@@ -136,7 +136,7 @@ body {
   margin-left: 77em;
   width: 150px;
   height: 150px;
-  background: url(/TemplateData/idiot.gif);
+  background: url(TemplateData/idiot.gif);
   background-size: cover;
 }
 #idiot2 {
@@ -145,7 +145,7 @@ body {
   margin-left: 84em;
   width: 150px;
   height: 150px;
-  background: url(/TemplateData/idiot.gif);
+  background: url(TemplateData/idiot.gif);
   background-size: cover;
 }
 .idiot:hover {
@@ -167,7 +167,7 @@ body {
   position: absolute;
   margin-top: -105px;
   margin-left: 1270px;
-  background: url(/TemplateData/cat.gif);
+  background: url(TemplateData/cat.gif);
   background-size: 80%;
   background-repeat: no-repeat;
 }
