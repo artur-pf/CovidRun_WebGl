@@ -1,105 +1,88 @@
 body {
+  overflow: hidden;
   padding: 0;
   margin: 0;
-  width: fit-content;
-  height: fit-content;
+  width: 100%;
+  height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("asphalt.png"), url("background.png");
-  background-color: #abddff;
-  background-position-y: 1em, 45.1em, 8em;
-  background-size: 100%, 10%, 75%;
-  background-repeat: repeat, repeat-x, repeat-x;
+  background-position-y: 1em, 123%, 0em;
+  background-size: 100%, 10%, cover;
+  background-repeat: repeat, repeat-x, no-repeat;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
-  overflow: hidden;
 }
-#unity-container {
-  position: absolute;
-}
-#unity-container.unity-desktop {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-#unity-container.unity-mobile {
-  width: 100%;
-  height: 100%;
-}
-#unity-canvas {
-  background: white;
-}
-.unity-mobile #unity-canvas {
-  width: 100%;
-  height: 100%;
-}
-#unity-loading-bar {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-}
-#unity-logo {
-  width: 154px;
-  height: 130px;
-  background: url("unity-logo-dark.png") no-repeat center;
-}
-#unity-progress-bar-empty {
-  width: 141px;
-  height: 18px;
-  margin-top: 10px;
-  background: url("progress-bar-empty-dark.png") no-repeat center;
-}
-#unity-progress-bar-full {
-  width: 0%;
-  height: 18px;
-  margin-top: 10px;
-  background: url("progress-bar-full-dark.png") no-repeat center;
-}
-#unity-footer {
+.container {
+  display: grid;
+  padding-top: 30px;
   position: relative;
-}
-.unity-mobile #unity-footer {
-  display: none;
-}
-#unity-webgl-logo {
-  float: left;
-  width: 204px;
-  height: 38px;
-  background: url("webgl-logo.png") no-repeat center;
-}
-#unity-build-title {
-  float: right;
-  margin-right: 10px;
-  line-height: 38px;
-  font-family: arial;
-  font-size: 18px;
-}
-#unity-fullscreen-button {
-  float: right;
-  width: 38px;
-  height: 38px;
-  background: url("fullscreen-button.png") no-repeat center;
-}
-#unity-mobile-warning {
-  position: absolute;
-  left: 50%;
-  top: 5%;
-  transform: translate(-50%);
-  background: white;
-  padding: 10px;
-  display: none;
+  overflow: hidden;
+  grid-template-columns: 1fr 70vw 1fr;
+  grid-template-rows: 1fr as 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "createor unity-box git-cat"
+    ". copyright .";
 }
 
-#copyrighttext {
-  color: white;
+.unity-box {
+  grid-area: unity-box;
+  background-color: rgba(144, 144, 67, 0.185);
+  aspect-ratio: 16/9;
+}
+
+.createor {
+  grid-area: createor;
+  /* background-color: rgba(131, 48, 48, 0.267); */
 }
 #socialbox {
-  left: 8em;
-  margin: 0;
-  position: absolute;
+  position: relative;
+  left: 100%;
   top: 50%;
-  transform: translateY(-50%) scale(1.5);
+  transform: translate(-50%, -50%);
+}
+
+.git-cat {
+  grid-area: git-cat;
+  /* background-color: rgba(65, 180, 225, 0.568); */
+}
+#git {
+  position: relative;
+  background-image: url("cat.gif");
+  aspect-ratio: 1/1;
+  background-size: 80%;
+  left: 50%;
+  top: 50%;
+  margin-left: 20px;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+}
+.copyright {
+  grid-area: copyright;
+  /* background-color: rgba(51, 112, 51, 0.253); */
+}
+
+#createdByText {
+  position: absolute;
+  margin: 0%;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  padding-top: 23%;
+  padding-left: 5%;
+  font-size: 40px;
+}
+@keyframes githover {
+  from {
+    margin-top: -1em;
+  }
+  to {
+    margin-top: 1.3em;
+  }
+}
+#git:hover {
+  cursor: pointer;
 }
 #a_git a {
   background: url(https://avatars.githubusercontent.com/u/82872781?v=4);
@@ -121,58 +104,23 @@ body {
   background: url(https://avatars.githubusercontent.com/u/83065034?v=4);
   background-size: cover;
 }
-#createdByText {
-  position: relative;
-  margin-top: 11.7em;
-  margin-left: 0.6em;
-  transform-origin: 0 0;
-  transform: rotate(-90deg);
-  font-size: 50px;
-  letter-spacing: 2px;
-  word-spacing: 10px;
-}
-#idiot1 {
-  position: absolute;
-  margin-top: 1.3em;
-  margin-left: 77em;
-  width: 150px;
-  height: 150px;
-  background: url("idiot.gif");
-  background-size: cover;
-}
-#idiot2 {
-  position: absolute;
-  margin-top: 1.3em;
-  margin-left: 84em;
-  width: 150px;
-  height: 150px;
-  background: url("idiot.gif");
-  background-size: cover;
-}
-.idiot:hover {
-  animation-name: example;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation-duration: 2s !important;
-}
-@keyframes example {
-  from {
-    margin-top: -1em;
+@media all and (max-width: 1000px) {
+  #socialbox {
+    transform: translate(-60%, -50%) scale(0.8);
   }
-  to {
-    margin-top: 1.3em;
+  #createdByText {
+    padding-top: 18%;
+    display: none;
+    visibility: hidden;
   }
 }
-#git {
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  margin-top: -9.3em;
-  margin-left: 103em;
-  background: url("cat.gif");
-  background-size: 80%;
-  background-repeat: no-repeat;
+@media all and (max-width: 1600px) {
+  #createdByText {
+    padding-top: 13%;
+  }
 }
-#git:hover {
-  cursor: pointer;
-  transform: translate(0px, -4px) scale(1.05);
+@media all and (max-width: 700px) {
+  #socialbox {
+    transform: translate(-80%, -50%) scale(0.8);
+  }
 }
