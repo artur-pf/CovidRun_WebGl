@@ -75,12 +75,12 @@
         </div>
     </body>
     <script>
-      var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/webgl 2.0.loader.js";
+       var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/webgl 4.0.loader.js";
       var config = {
-        dataUrl: buildUrl + "/webgl 2.0.data.unityweb",
-        frameworkUrl: buildUrl + "/webgl 2.0.framework.js.unityweb",
-        codeUrl: buildUrl + "/webgl 2.0.wasm.unityweb",
+        dataUrl: buildUrl + "/webgl 4.0.data.unityweb",
+        frameworkUrl: buildUrl + "/webgl 4.0.framework.js.unityweb",
+        codeUrl: buildUrl + "/webgl 4.0.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "BigBrainGroup",
         productName: "CovidRun",
@@ -111,8 +111,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
+        canvas.style.width = "auto";
+        canvas.style.height = "auto";
       }
       loadingBar.style.display = "block";
 
