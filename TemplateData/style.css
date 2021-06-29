@@ -167,10 +167,18 @@ body {
     display: none;
     visibility: hidden;
   }
+  #git {
+    visibility: hidden;
+  }
 }
 @media all and (max-width: 1600px) {
   #createdByText {
     padding-top: 13%;
+  }
+}
+@media all and (max-width: 1300px) {
+  #git {
+    visibility: hidden;
   }
 }
 @media all and (max-width: 700px) {
@@ -178,5 +186,8 @@ body {
     -webkit-transform: translate(-80%, -50%) scale(0.8);
     -ms-transform: translate(-80%, -50%) scale(0.8);
     transform: translate(-80%, -50%) scale(0.8);
+  }
+  #git {
+    visibility: hidden;
   }
 }
