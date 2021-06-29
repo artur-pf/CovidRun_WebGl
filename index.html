@@ -1,84 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="TemplateData/style.css">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>CovidRun</title>
-        <link rel="shortcut icon" href="TemplateData/favicon.ico">
-        <link rel="stylesheet" type="text/css"
-            href="https://cdn.jsdelivr.net/gh/vaakash/socializer@2f749eb/css/socializer.min.css">
-        <link rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link
-            href="//db.onlinewebfonts.com/c/cae9571407321e5d5e496ada719e9f63?family=Pixel"
-            rel="stylesheet" type="text/css" id="copyright_2003 Boris Kahl,
-            Volcano Type, Karlsruhe" />
-        </head>
-    </head>
-    <body>
-        <div class="container" style="position:relative">
-            <div class="unity-box" id="unity-container" class="unity-desktop">
-                <canvas id="unity-canvas" width=auto height=auto></canvas>
-                <div id="unity-loading-bar">
-                    <div id="unity-logo"></div>
-                    <div id="unity-progress-bar-empty">
-                      <div id="unity-progress-bar-full"></div>
-                    </div>
-                  </div>
-                  <div id="unity-footer">
-                    <div id="unity-webgl-logo"></div>
-                    <div id="unity-fullscreen-button"></div>
-                    <div id="unity-build-title"></div>
-                  </div>
-            </div>
-            <div class="createor">
-                <h1 id="createdByText">CREATOR</h1>
-                <div class="sr-sharebar sr-sb-vl sr-sb-left" id="socialbox">
-                    <div class="socializer a sr-64px sr-circle sr-shrink
-                        sr-vertical sr-font-lg sr-bg-white sr-sw-1 sr-pad">
-                        <span class="sr-github sr-text-below" id="a_git">
-                            <a href="https://github.com/artur-pf"
-                                target="_blank" title="Github"></a>
-                            <span class="text" style="font-weight: bolder;">artur-pf</span>
-                        </span>
-                        <span class="sr-github sr-text-below" id="c_git">
-                            <a href="https://github.com/chrisinick"
-                                target="_blank" title="Github"></a>
-                            <span class="text" style="text-align: center;
-                                font-weight: bolder;">chrisinick</span>
-                        </span>
-                        <span class="sr-github sr-text-below" id="an_git">
-                            <a href="https://github.com/and1mon" target="_blank"
-                                title="Github"></a>
-                            <span class="text" style="text-align: center;
-                                font-weight: bolder;">and1mon</span>
-                        </span>
-                        <span class="sr-github sr-text-below" id="fr_git">
-                            <a href="https://github.com/FrankyFFBF"
-                                target="_blank" title="Github"></a>
-                            <span class="text" style="margin-right:10px;
-                                font-weight: bolder;">FrankyFFBF</span>
-                        </span>
-                        <span class="sr-github sr-text-below" id="oz_git">
-                            <a href="https://github.com/Edge71" target="_blank"
-                                title="Github"></a>
-                            <span class="text" style="text-align: center;
-                                font-weight: bolder;">Edge71</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="git-cat"><div id="git" onClick="window.open('https://git.informatik.fh-nuernberg.de/se-projekt-2dendlessrunner/covidrun')"></div></div>
-            <div class="copyright"><p id="copyrighttext">&#169; 2021 SE-2D
-                    Endless Runner. All rights
-                    reserved.</p></div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>CovidRun</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/gh/vaakash/socializer@2f749eb/css/socializer.min.css">
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css"
+      href="//db.onlinewebfonts.com/c/cae9571407321e5d5e496ada719e9f63?family=Pixel"
+      />
+    <!-- Copyright_2003 Boris Kahl,Volcano Type, Karlsruhe" -->
+  </head>
+  <body>
+    <div class="container" style="position:relative">
+      <div class="unity-box" id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas"></canvas>
+        <div id="unity-loading-bar">
+          <div id="unity-logo"></div>
+          <div id="unity-progress-bar-empty">
+            <div id="unity-progress-bar-full"></div>
+          </div>
         </div>
-    </body>
-    <script>
+        <div id="unity-footer">
+          <div id="unity-webgl-logo"></div>
+          <div id="unity-fullscreen-button"></div>
+          <div id="unity-build-title"></div>
+        </div>
+      </div>
+      <div class="createor">
+        <h1 id="createdByText">CREATOR</h1>
+        <div class="sr-sharebar sr-sb-vl sr-sb-left" id="socialbox">
+          <div class="socializer a sr-64px sr-circle sr-shrink
+            sr-vertical sr-font-lg sr-bg-white sr-sw-1 sr-pad">
+            <span class="sr-github sr-text-below" id="a_git">
+              <a href="https://github.com/artur-pf"
+                target="_blank" title="Github"></a>
+              <span class="text" style="font-weight: bolder;">artur-pf</span>
+            </span>
+            <span class="sr-github sr-text-below" id="c_git">
+              <a href="https://github.com/chrisinick"
+                target="_blank" title="Github"></a>
+              <span class="text" style="text-align: center;
+                font-weight: bolder;">chrisinick</span>
+            </span>
+            <span class="sr-github sr-text-below" id="an_git">
+              <a href="https://github.com/and1mon" target="_blank"
+                title="Github"></a>
+              <span class="text" style="text-align: center;
+                font-weight: bolder;">and1mon</span>
+            </span>
+            <span class="sr-github sr-text-below" id="fr_git">
+              <a href="https://github.com/FrankyFFBF"
+                target="_blank" title="Github"></a>
+              <span class="text" style="margin-right:10px;
+                font-weight: bolder;">FrankyFFBF</span>
+            </span>
+            <span class="sr-github sr-text-below" id="oz_git">
+              <a href="https://github.com/Edge71" target="_blank"
+                title="Github"></a>
+              <span class="text" style="text-align: center;
+                font-weight: bolder;">Edge71</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="git-cat"><div id="git"
+          onClick="window.open('https://git.informatik.fh-nuernberg.de/se-projekt-2dendlessrunner/covidrun')"></div></div>
+      <div class="copyright"><p id="copyrighttext">&#169; 2021 SE-2D
+          Endless Runner. All rights
+          reserved.</p></div>
+    </div>
+  </body>
+  <script>
         var buildUrl = "Build";
       var loaderUrl = buildUrl + "/new webgl 1.0.loader.js";
       var config = {
