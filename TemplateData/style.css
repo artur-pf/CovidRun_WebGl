@@ -1,9 +1,26 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 20 version
+*/
+
 body {
   overflow: hidden;
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.8)),
+      to(rgba(0, 0, 0, 0.8))
+    ),
+    url("asphalt.png"), url("background.png");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("asphalt.png"), url("background.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("asphalt.png"), url("background.png");
   background-position-y: 1em, 123%, 0em;
@@ -13,11 +30,14 @@ body {
   color: white;
 }
 .container {
+  display: -ms-grid;
   display: grid;
   padding-top: 30px;
   position: relative;
   overflow: hidden;
+  -ms-grid-columns: 1fr 0px 70vw 0px 1fr;
   grid-template-columns: 1fr 70vw 1fr;
+  -ms-grid-rows: 1fr 0px as 0px 1fr;
   grid-template-rows: 1fr as 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -28,12 +48,16 @@ body {
 }
 
 .unity-box {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-area: unity-box;
   background-color: rgba(144, 144, 67, 0.185);
   aspect-ratio: 16/9;
 }
 
 .createor {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: createor;
   /* background-color: rgba(131, 48, 48, 0.267); */
 }
@@ -41,10 +65,14 @@ body {
   position: relative;
   left: 100%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
 .git-cat {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
   grid-area: git-cat;
   /* background-color: rgba(65, 180, 225, 0.568); */
 }
@@ -56,10 +84,14 @@ body {
   left: 50%;
   top: 50%;
   margin-left: 20px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-repeat: no-repeat;
 }
 .copyright {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
   grid-area: copyright;
   /* background-color: rgba(51, 112, 51, 0.253); */
 }
@@ -67,11 +99,22 @@ body {
 #createdByText {
   position: absolute;
   margin: 0%;
+  -webkit-text-orientation: upright;
   text-orientation: upright;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   padding-top: 23%;
   padding-left: 5%;
   font-size: 40px;
+}
+@-webkit-keyframes githover {
+  from {
+    margin-top: -1em;
+  }
+  to {
+    margin-top: 1.3em;
+  }
 }
 @keyframes githover {
   from {
@@ -106,6 +149,8 @@ body {
 }
 @media all and (max-width: 1000px) {
   #socialbox {
+    -webkit-transform: translate(-60%, -50%) scale(0.8);
+    -ms-transform: translate(-60%, -50%) scale(0.8);
     transform: translate(-60%, -50%) scale(0.8);
   }
   #createdByText {
@@ -121,6 +166,8 @@ body {
 }
 @media all and (max-width: 700px) {
   #socialbox {
+    -webkit-transform: translate(-80%, -50%) scale(0.8);
+    -ms-transform: translate(-80%, -50%) scale(0.8);
     transform: translate(-80%, -50%) scale(0.8);
   }
 }
