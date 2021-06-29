@@ -62,19 +62,41 @@ body {
   /* background-color: rgba(131, 48, 48, 0.267); */
 }
 #socialbox {
+  margin: 0;
+  padding: 0;
   position: relative;
-  left: 100%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  align-self: baseline;
 }
-
+#creatorbox {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .git-cat {
   -ms-grid-row: 3;
   -ms-grid-column: 5;
   grid-area: git-cat;
   /* background-color: rgba(65, 180, 225, 0.568); */
+}
+#createdByText {
+  /* position: absolute;
+  margin: 0%; */
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  -webkit-text-orientation: upright;
+  text-orientation: upright;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+
+  font-size: 40px;
 }
 #git {
   position: relative;
@@ -94,19 +116,6 @@ body {
   -ms-grid-column: 3;
   grid-area: copyright;
   /* background-color: rgba(51, 112, 51, 0.253); */
-}
-
-#createdByText {
-  position: absolute;
-  margin: 0%;
-  -webkit-text-orientation: upright;
-  text-orientation: upright;
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  padding-top: 23%;
-  padding-left: 5%;
-  font-size: 40px;
 }
 @-webkit-keyframes githover {
   from {
