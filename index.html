@@ -29,7 +29,11 @@
                       <div id="unity-progress-bar-full"></div>
                     </div>
                   </div>
-                  <div id="unity-footer"></div>
+                  <div id="unity-footer">
+                    <div id="unity-webgl-logo"></div>
+                    <div id="unity-fullscreen-button"></div>
+                    <div id="unity-build-title">CovidRun</div>
+                  </div>
             </div>
             <div class="createor">
                 <h1 id="createdByText">CREATOR</h1>
@@ -75,14 +79,14 @@
         </div>
     </body>
     <script>
-       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/webgl 4.0.loader.js";
+        var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/new webgl 1.0.loader.js";
       var config = {
-        dataUrl: buildUrl + "/webgl 4.0.data.unityweb",
-        frameworkUrl: buildUrl + "/webgl 4.0.framework.js.unityweb",
-        codeUrl: buildUrl + "/webgl 4.0.wasm.unityweb",
+        dataUrl: buildUrl + "/new webgl 1.0.data.unityweb",
+        frameworkUrl: buildUrl + "/new webgl 1.0.framework.js.unityweb",
+        codeUrl: buildUrl + "/new webgl 1.0.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "BigBrainGroup",
+        companyName: "DefaultCompany",
         productName: "CovidRun",
         productVersion: "1.0",
       };
